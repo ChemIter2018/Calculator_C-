@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -dynamiclib -Wl,-headerpad_max_install_names -compatibility_version 1.0.0 -current_version 1.0.0 -o CalculatorCore.1.0.0.dylib -install_name @rpath/CalculatorCore.1.dylib CMakeFiles/CalculatorCore.dir/CalculatorCore.cpp.o

@@ -1,0 +1,3 @@
+/Users/zhaoyi/CLionProjects/Calculator_C#/src/Calculator.Core/build/CMakeFiles/CalculatorCore.dir
+/Users/zhaoyi/CLionProjects/Calculator_C#/src/Calculator.Core/build/CMakeFiles/edit_cache.dir
+/Users/zhaoyi/CLionProjects/Calculator_C#/src/Calculator.Core/build/CMakeFiles/rebuild_cache.dir

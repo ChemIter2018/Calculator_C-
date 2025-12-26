@@ -1,0 +1,6 @@
+/Users/zhaoyi/CLionProjects/Calculator_C#/src/Calculator.UI/bin/Release/net10.0/osx-arm64/publish/Calculator.UI.pdb
+/Users/zhaoyi/CLionProjects/Calculator_C#/src/Calculator.UI/bin/Release/net10.0/osx-arm64/publish/CalculatorCore.dylib
+/Users/zhaoyi/CLionProjects/Calculator_C#/src/Calculator.UI/bin/Release/net10.0/osx-arm64/publish/libAvaloniaNative.dylib
+/Users/zhaoyi/CLionProjects/Calculator_C#/src/Calculator.UI/bin/Release/net10.0/osx-arm64/publish/libHarfBuzzSharp.dylib
+/Users/zhaoyi/CLionProjects/Calculator_C#/src/Calculator.UI/bin/Release/net10.0/osx-arm64/publish/libSkiaSharp.dylib
+/Users/zhaoyi/CLionProjects/Calculator_C#/src/Calculator.UI/bin/Release/net10.0/osx-arm64/publish/Calculator.UI
