@@ -1,3 +1,32 @@
+# 项目结构与编译指南
+
+## 1. 项目文件结构 (Tree Structure)
+
+```text
+Calculator_C#/
+├── UserGuide.md             # 用户指南与编译发布说明
+└── src/
+    ├── Calculator.Core/      # C++ 核心逻辑层 (后端)
+    │   ├── CMakeLists.txt     # CMake 编译配置文件，定义如何生成动态库
+    │   ├── CalculatorCore.cpp  # 计算逻辑的具体 C++ 实现
+    │   ├── CalculatorCore.h    # C++ 接口定义，用于与 C# 通信
+    │   └── build/             # C++ 编译生成目录，包含生成的 .dylib 库
+    └── Calculator.UI/        # Avalonia C# UI 层 (前端界面)
+        ├── App.axaml          # 全局应用定义、资源和样式
+        ├── Program.cs         # 程序的启动入口
+        ├── Calculator.UI.csproj # C# 项目工程文件，管理依赖和编译选项
+        ├── Models/            # 数据模型类
+        ├── ViewModels/        # 业务逻辑处理 (MVVM 模式)
+        ├── Views/             # UI 布局文件 (.axaml)，定义界面样子
+        ├── ViewLocator.cs     # 视图定位器，用于将 ViewModel 自动匹配并映射到对应的 View
+        ├── NativeMethods.cs   # 核心桥接文件，通过 P/Invoke (DllImport) 调用 C++ 动态库
+        ├── Assets/            # 静态资源文件 (如图标)
+        └── app.manifest       # 应用清单文件 (Windows 兼容性等配置)
+```
+
+---
+
+## 2. 编译发布命令
 ``` bash
 dotnet publish -c Release -r osx-arm64 --self-contained true -p:PublishSingleFile=true
 chmod +x bin/Release/net10.0/osx-arm64/publish/Calculator.UI
